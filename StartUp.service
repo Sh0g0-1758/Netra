@@ -1,0 +1,13 @@
+[Unit]
+Description=Object Detection and text to speech StartUp script
+ 
+[Service]
+ExecStart=/home/pi/startup.sh
+WorkingDirectory=/home/pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+ 
+[Install]
+WantedBy=multi-user.target
