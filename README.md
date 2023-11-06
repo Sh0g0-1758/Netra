@@ -20,7 +20,7 @@ You will need the following software and hardware :
 
 # Set-UP
 
-If you don't already have Buster OS, you can download it from <a href="https://downloads.raspberrypi.org/raspbian/images/raspbian-2020-02-14/"> here</a>. If that does not work, We have provided the image file in Resources folder as well.
+If you don't already have Buster OS, you can download it from <a href="https://downloads.raspberrypi.org/raspbian/images/raspbian-2020-02-14/"> here</a>.
 
 Now connect your R-PI with HDMI cable , Earphone jack and power supply like this : 
 
