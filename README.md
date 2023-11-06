@@ -114,6 +114,8 @@ Here's a detailed explanation of the code:
 
 8. **Wait for user input**: The code waits for a key press (using cv2.waitKey(1)) to exit the loop. You can exit the program by pressing any key.
 
+You can check out the References we used to make this project in the References Folder. 
+
 # Contributors
 
 1. Shourya Goel |  <a href="https://twitter.com/ShogLoFi">**shogo**</a>
