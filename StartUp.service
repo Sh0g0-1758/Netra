@@ -1,13 +1,29 @@
 [Unit]
-Description=Object Detection and text to speech StartUp script
- 
+# Description: This unit defines a service for starting Object Detection and Text-to-Speech at startup.
+
 [Service]
+# ExecStart: The command that will be executed to start the service.
+# In this case, it runs the 'startup.sh' script located at '/home/pi/startup.sh'.
 ExecStart=/home/pi/startup.sh
+
+# WorkingDirectory: The directory where the service will run. 
+# In this case, it's set to '/home/pi'.
 WorkingDirectory=/home/pi
+
+# StandardOutput and StandardError: Control where the output and error messages are directed.
+# 'inherit' means they are sent to the same output as the parent process.
 StandardOutput=inherit
 StandardError=inherit
+
+# Restart: Specifies when the service should be restarted.
+# 'always' means it will be automatically restarted if it fails.
 Restart=always
+
+# User: Specifies the user account under which the service will run.
+# In this case, it runs as the 'pi' user.
 User=pi
- 
+
 [Install]
+# WantedBy: Specifies the system target that this service should be started with.
+# 'multi-user.target' is a common target for services that should start when the system is in multi-user mode.
 WantedBy=multi-user.target
