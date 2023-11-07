@@ -2,20 +2,20 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
-# Specify your custom model path
+# Specify your custom model path 
 model_path = 'MyObjectDetectionModel/ssd_mobilenet_v2_coco_2018_03_29/saved_model'
 
-# Load your custom MobileNet SSD model
+# Load your custom MobileNet SSD model 
 model = tf.saved_model.load(model_path)
 
-# Get the inference function
+# Get the inference function 
 inference_fn = model.signatures['serving_default']
 
-# Open the video file for reading
+# Open the video file for reading 
 video_path = 'Bro.mp4'
 cap = cv2.VideoCapture(video_path)
 
-# Define the codec and create a VideoWriter object to save the output video with H.264 codec
+# Define the codec and create a VideoWriter object to save the output video with H.264 codec 
 fourcc = cv2.VideoWriter_fourcc(*'avc1')
 out = cv2.VideoWriter('outfin.mp4', fourcc, 30.0, (int(cap.get(3)), int(cap.get(4))))
 
@@ -25,7 +25,7 @@ while cap.isOpened():
     if not ret:
         break
 
-    # Convert the frame to a format suitable for the model
+    # Convert the frame to a format suitable for the model    
     input_image = cv2.resize(frame, (300, 300))
     input_image = cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
     input_image = np.array(input_image, dtype=np.uint8)  # Convert to uint8
