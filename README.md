@@ -1,4 +1,5 @@
 # N.E.T.R.A [Network for Enhanced Target Recognition and Assistance]
+<img src ="assets/Artboard 2@2x.png" alt="Netra logo" >
 
 Hardware based object detection and Text to speech aimed to ease the daily life of blind people. 
 
