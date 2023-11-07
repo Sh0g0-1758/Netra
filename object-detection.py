@@ -63,7 +63,8 @@ def getObjects(img, thres, nms, draw=True, objects=[]):
                         (0, 255, 0),
                         2,
                     )
-
+    
+    # Return image with detected objects and their info 
     return img, objectInfo
 
 # Main part of the code
